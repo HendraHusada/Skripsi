@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Learning</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- About tab -->
+    <string name="about_developers_label">Main developers</string>
+    <string name="about_translator_label">Translator</string>
+    <string name="changelog">Changelog</string>
+    <string name="translator"></string>
+    <string name="about_version_label">Version</string>
+    <string name="about_source_label">Source code</string>
+    <string name="about_libraries_label">Used libraries</string>
+
+    <!-- Navigation -->
+    <string name="nav_geometry">Geometry</string>
+    <string name="nav_about">About</string>
+    <string name="nav_reward">Material Design </string>
+    <string name="nav_bank">Nearest Bank</string>
+    <string name="nav_tips">Recycler Tips</string>
+
+
+    <string name="details">Details</string>
+    <string name="version_app">1.0.0</string>
+    <string name="tips">
+        1. Pilah Sampah berdasarkan kategorinya organik / anorganik \n\n
+        2. Kreasikan sampah tersebut menjadi barang yang dapat digunakan kembali\n\n
+        3. Dan anda bisa promosikan atau menjual ke teman anda\n\n
+        4. Anda bisa saja mengirimkan sampah anda ke bank sampah terdekat melalui samita agar dapat diproses
+    </string>
+    <string name="layout">Layout</string>
+    <string name="hukum">Shalat jenazah adalah shalat yang dilakukan kaum muslim terhadap muslim lainnya yang meninggal dunia. Hukum untuk melaksanakan shalat jenazah adalah <b><u>fardhu kifayah</u></b> (wajib bagi sebagian kaum muslim). Artinya harus ada sebagian kaum muslim yang melaksanakan shalat jenazah apabila ada seorang muslim meninggal dunia. Bila hal itu terpenuhi maka gugurlah kewajiban muslim lain untuk menshalatkannya. Namun apabila tidak ada satupun muslim yang melaksanakan shalat jenazah maka seluruh orang orang muslim akan mendapat dosa karena meninggalkan sesuatu yang fardhu</string>
+    <string name="rukun">
+        <b>1.</b> Niat\n\n
+        <b>2.</b> Berdiri bagi yang mampu\n\n
+        <b>3.</b> Melaksanakan dengan 4 kali takbir\n\n
+        <b>4.</b> Setelah takbir pertama membaca surat Al-Fatihah\n\n
+        <b>5.</b> Setelah takbir kedua membaca shalawat kepada Nabi Muhammad SAW\n\n
+        <b>6.</b> Membaca doa setelah takbir ketiga\n\n
+        <b>7.</b> Membaca doa setelah takbir keempat\n\n
+        <b>8.</b> Letak mayit sebelah kiblat orang yang menyalatinya, kecuali kalau shalat dilakukan di atas kubur atau shalat ghaib\n\n
+    </string>
+    <string name="syarat">
+        <b>1.</b> Beragama islam\n\n
+        <b>2.</b> Baligh dan berakal\n\n
+        <b>3.</b> Suci dari hadits besar dan kecil\n\n
+        <b>4.</b> Menutup aurat\n\n
+        <b>5.</b> Menghadap kiblat\n\n
+        <b>6.</b> Mayit sudah dimandikan\n\n
+        <b>7.</b> Letak mayit sebelah kiblat orang yang menyalatinya, kecuali kalau shalat dilakukan diatas kubur atau shalat ghaib\n\n
+    </string>
+
+    <string name="nav_home">Home</string>
+
+    <string name="aboutme">Android Developer</string>
+</resources>
