@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import xebia.ismail.e_learning.R;
-import xebia.ismail.e_learning.bacaan.BacaanFragment;
+import xebia.ismail.e_learning.bcn.BacaanFragment;
 import xebia.ismail.e_learning.materi.RukunFragment;
 import xebia.ismail.e_learning.materi.SyaratFragment;
 
