@@ -1,5 +1,7 @@
 package xebia.ismail.e_learning.bcn;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +23,7 @@ public class BacaanAdapter extends RecyclerView.Adapter<BacaanAdapter.BacaanView
 
     private ViewHolderClickListener mOnViewHolderClickListener;
     private List<BacaanModel> bacaan;
+    private Context context;
 
     public List<BacaanModel> getListBacaan(){
         return this.bacaan;
@@ -34,7 +37,9 @@ public class BacaanAdapter extends RecyclerView.Adapter<BacaanAdapter.BacaanView
         mOnViewHolderClickListener = viewHolderClickListener;
     }
 
-    public BacaanAdapter(){}
+    public BacaanAdapter(Context context){
+        this.context = context;
+    }
 
     //viewholder
     public class BacaanViewHolder extends RecyclerView.ViewHolder{
@@ -78,11 +83,14 @@ public class BacaanAdapter extends RecyclerView.Adapter<BacaanAdapter.BacaanView
         holder.pb2a.setRotation(180);
         holder.pb2b.setRotation(180);
 
-        holder.pb1.setScaleY(10f);
-        holder.pb2a.setScaleY(10f);
-        holder.pb2b.setScaleY(10f);
+
+        holder.pb1.setScaleY(30f);
+        holder.pb2a.setScaleY(30f);
+        holder.pb2b.setScaleY(30f);
 
         if(bacaan.get(position).barisBacaan == 1){
+            holder.ivArab1.setImageResource(bacaan.get(position).imgId);
+
             holder.layout1Baris.setVisibility(View.VISIBLE);
             holder.layout2Baris.setVisibility(View.GONE);
             if(bacaan.get(position).isSelected){
@@ -94,6 +102,8 @@ public class BacaanAdapter extends RecyclerView.Adapter<BacaanAdapter.BacaanView
             }
         }
         else if(bacaan.get(position).barisBacaan == 2){
+            holder.ivArab2.setImageResource(bacaan.get(position).imgId);
+
             holder.layout1Baris.setVisibility(View.GONE);
             holder.layout2Baris.setVisibility(View.VISIBLE);
             if(bacaan.get(position).isSelected){

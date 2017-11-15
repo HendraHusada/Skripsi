@@ -10,15 +10,17 @@ import android.widget.ProgressBar;
 public class BacaanModel {
     int barisBacaan;
     boolean isSelected;
+    int imgId;
 
     CountDownTimer cdt1, cdt2a, cdt2b;
     long milisecond;
 
 
 
-    public BacaanModel(int brsbcn, boolean isSelected){
+    public BacaanModel(int brsbcn, boolean isSelected, int imgId){
         barisBacaan = brsbcn;
         this.isSelected = isSelected;
+        this.imgId = imgId;
 
         if(brsbcn==1){
             cdt1 = new CountDownTimer(1000,1000) {

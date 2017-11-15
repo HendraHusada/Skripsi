@@ -46,17 +46,17 @@ public class BacaanFragment extends Fragment {
         rvBacaan.setHasFixedSize(true);
 
         List<BacaanModel> bcn = new ArrayList<BacaanModel>();
-        bcn.add(new BacaanModel(1,false));
-        bcn.add(new BacaanModel(2,false));
-        bcn.add(new BacaanModel(1,false));
-        bcn.add(new BacaanModel(2,false));
-        bcn.add(new BacaanModel(1,false));
-        bcn.add(new BacaanModel(2,false));
-        bcn.add(new BacaanModel(1,false));
-        bcn.add(new BacaanModel(2,false));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_1));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_2));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_3));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_4));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_5));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_6));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_7));
 
 
-        final BacaanAdapter adapterBacaan = new BacaanAdapter();
+
+        final BacaanAdapter adapterBacaan = new BacaanAdapter(getContext());
         adapterBacaan.setListBacaan(bcn);
         adapterBacaan.setClickListener(new BacaanAdapter.ViewHolderClickListener() {
             @Override
