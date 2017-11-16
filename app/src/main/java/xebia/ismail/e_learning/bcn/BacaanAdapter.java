@@ -83,10 +83,9 @@ public class BacaanAdapter extends RecyclerView.Adapter<BacaanAdapter.BacaanView
         holder.pb2a.setRotation(180);
         holder.pb2b.setRotation(180);
 
-
         holder.pb1.setScaleY(30f);
-        holder.pb2a.setScaleY(30f);
-        holder.pb2b.setScaleY(30f);
+        holder.pb2a.setScaleY(20f);
+        holder.pb2b.setScaleY(20f);
 
         if(bacaan.get(position).barisBacaan == 1){
             holder.ivArab1.setImageResource(bacaan.get(position).imgId);

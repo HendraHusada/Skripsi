@@ -53,6 +53,10 @@ public class BacaanFragment extends Fragment {
         bcn.add(new BacaanModel(1, false, R.drawable.takbir3_5));
         bcn.add(new BacaanModel(1, false, R.drawable.takbir3_6));
         bcn.add(new BacaanModel(1, false, R.drawable.takbir3_7));
+        bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris1_co));
+        bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris2_co));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir4_baris3_co));
+
 
 
 
