@@ -84,4 +84,10 @@ public class BacaanFragment extends Fragment {
 
         rvBacaan.setAdapter(adapterBacaan);
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if(mPlayer.isPlaying()){ mPlayer.stop(); }
+    }
 }
