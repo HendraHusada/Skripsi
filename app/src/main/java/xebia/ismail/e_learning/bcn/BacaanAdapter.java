@@ -115,6 +115,9 @@ public class BacaanAdapter extends RecyclerView.Adapter<BacaanAdapter.BacaanView
                 holder.pb2b.setVisibility(View.GONE);
             }
         }
+
+        holder.tvArti.setText(bacaan.get(position).arti);
+        holder.tvLatin.setText(bacaan.get(position).latin);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package xebia.ismail.e_learning.fragment;
+package xebia.ismail.e_learning.materi;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,18 +10,16 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import xebia.ismail.e_learning.R;
-import xebia.ismail.e_learning.bcn.SwitchBacaanFragment;
-import xebia.ismail.e_learning.front.FrontEvaluasiFragment;
-import xebia.ismail.e_learning.front.FrontMateriFragment;
-import xebia.ismail.e_learning.front.FrontVideoFragment;
+import xebia.ismail.e_learning.bcn.BacaanFragment;
 
 /**
  * Created by Admin on 3/15/2017.
  */
 
-public class VolumeFragment extends Fragment{
+public class MateriTabFragment extends Fragment{
 
     private static ViewPager mPager;
     private TabLayout mTabLayout;
@@ -31,6 +29,9 @@ public class VolumeFragment extends Fragment{
         View view = inflater.inflate(R.layout.tab_volume, container, false);
         mPager = (ViewPager) view.findViewById(R.id.pager);
         mTabLayout = (TabLayout) view.findViewById(R.id.tab_layout);
+        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.setMargins(0,0,0,0);
+        mTabLayout.setLayoutParams(params);
 
         mPager.setAdapter(new TabsAdapter(getChildFragmentManager()));
         mTabLayout.setupWithViewPager(mPager);
@@ -48,20 +49,18 @@ public class VolumeFragment extends Fragment{
 
         @Override
         public int getCount() {
-            return 4;
+            return 3;
         }
 
         @Override
         public Fragment getItem(int i) {
             switch (i) {
                 case 0:
-                    return new FrontMateriFragment();
+                    return new HukumFragment();
                 case 1:
-                    return new SwitchBacaanFragment();
+                    return new SyaratFragment();
                 case 2:
-                    return new FrontVideoFragment();
-                case 3:
-                    return new FrontEvaluasiFragment();
+                    return new RukunFragment();
             }
             return null;
         }
@@ -70,13 +69,11 @@ public class VolumeFragment extends Fragment{
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Materi";
+                    return "Hukum";
                 case 1:
-                    return "Bacaan";
+                    return "Syarat";
                 case 2:
-                    return "Video";
-                case 3:
-                    return "Evaluasi";
+                    return "Rukun";
             }
             return "";
         }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_description" />
+
+    <TextView
+        android:id="@+id/txtMateri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Halaman ini berisi tentang materi mulai dari hukum shalat jenazah, rukun shalat jenazah dan syarat shalat jenazah"
+        />
+
+    <Button
+        android:id="@+id/butFrontMateri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Pelajari Materi!" />
+</LinearLayout>

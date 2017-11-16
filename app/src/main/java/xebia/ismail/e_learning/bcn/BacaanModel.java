@@ -12,17 +12,21 @@ public class BacaanModel {
     boolean isSelected;
     int imgId;
     int mp3Id;
+    String arti;
+    String latin;
 
     CountDownTimer cdt1, cdt2a, cdt2b;
     long milisecond;
 
+    public static String kelamin="";
 
-
-    public BacaanModel(int brsbcn, boolean isSelected, int imgId, int mp3Id){
+    public BacaanModel(int brsbcn, boolean isSelected, int imgId, int mp3Id, String arti, String latin){
         barisBacaan = brsbcn;
         this.isSelected = isSelected;
         this.imgId = imgId;
         this.mp3Id = mp3Id;
+        this.arti = arti;
+        this.latin = latin;
 
         if(brsbcn==1){
             cdt1 = new CountDownTimer(1000,1000) {

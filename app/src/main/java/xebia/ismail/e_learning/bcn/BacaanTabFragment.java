@@ -13,8 +13,6 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import xebia.ismail.e_learning.R;
-import xebia.ismail.e_learning.materi.RukunFragment;
-import xebia.ismail.e_learning.materi.SyaratFragment;
 
 /**
  * Created by Admin on 3/15/2017.
@@ -50,7 +48,7 @@ public class BacaanTabFragment extends Fragment{
 
         @Override
         public int getCount() {
-            return 4;
+            return 6;
         }
 
         @Override
@@ -62,16 +60,24 @@ public class BacaanTabFragment extends Fragment{
                     return bcnFr;
                 case 1:
                     BacaanFragment bcnFr1 = new BacaanFragment();
-                    bcnFr1.setBacaanApa("fatihah");
+                    bcnFr1.setBacaanApa("takbir1");
                     return bcnFr1;
                 case 2:
                     BacaanFragment bcnFr2 = new BacaanFragment();
-                    bcnFr2.setBacaanApa("takbir");
+                    bcnFr2.setBacaanApa("takbir2");
                     return bcnFr2;
                 case 3:
                     BacaanFragment bcnFr3 = new BacaanFragment();
-                    bcnFr3.setBacaanApa("takbir1");
+                    bcnFr3.setBacaanApa("takbir3");
                     return bcnFr3;
+                case 4:
+                    BacaanFragment bcnFr4 = new BacaanFragment();
+                    bcnFr4.setBacaanApa("takbir4");
+                    return bcnFr4;
+                case 5:
+                    BacaanFragment bcnFr5 = new BacaanFragment();
+                    bcnFr5.setBacaanApa("salam");
+                    return bcnFr5;
             }
             return null;
         }
@@ -82,11 +88,15 @@ public class BacaanTabFragment extends Fragment{
                 case 0:
                     return "Niat";
                 case 1:
-                    return "Al Fatihah";
+                    return "Takbir 1";
                 case 2:
-                    return "Warhamhahu";
+                    return "Takbir 2";
                 case 3:
-                    return "Takbir1";
+                    return "Takbir 3";
+                case 4:
+                    return "Takbir 4";
+                case 5:
+                    return "Salam";
             }
             return "";
         }

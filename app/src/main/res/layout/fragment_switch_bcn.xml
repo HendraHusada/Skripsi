@@ -2,19 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_vertical">
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_shalat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="Halaman ini berisi tentang bacaan shalat jenazah disertai audio, latin dan arti dari bacaan shalat untuk mayit laki-laki dan mayit perempuan"
+        />
 
     <Button
+        android:layout_marginTop="10dp"
         android:id="@+id/butCewek"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bacaan Jenazah Perempuan"/>
+        android:layout_height="80dp"
+        android:text="Bacaan Shalat Jenazah Perempuan"/>
 
     <Button
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
         android:id="@+id/butCowok"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bacaan Jenazah Laki-Laki"/>
+        android:layout_height="80dp"
+        android:text="Bacaan Shalat Jenazah Laki-Laki"/>
 </LinearLayout>
 

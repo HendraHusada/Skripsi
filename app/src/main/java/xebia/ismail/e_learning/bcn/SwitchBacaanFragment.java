@@ -49,6 +49,7 @@ public class SwitchBacaanFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getContext(), "Cewek", Toast.LENGTH_SHORT).show();
+                BacaanModel.kelamin = "cewek";
                 startActivity(new Intent(getActivity(), BacaanActivity.class));
             }
         });
@@ -57,6 +58,7 @@ public class SwitchBacaanFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getContext(), "Cowok", Toast.LENGTH_SHORT).show();
+                BacaanModel.kelamin = "cowok";
                 startActivity(new Intent(getActivity(), BacaanActivity.class));
             }
         });
