@@ -50,18 +50,28 @@ public class BacaanTabFragment extends Fragment{
 
         @Override
         public int getCount() {
-            return 3;
+            return 4;
         }
 
         @Override
         public Fragment getItem(int i) {
             switch (i) {
                 case 0:
-                    return new BacaanFragment();
+                    BacaanFragment bcnFr = new BacaanFragment();
+                    bcnFr.setBacaanApa("niat");
+                    return bcnFr;
                 case 1:
-                    return new BacaanFragment();
+                    BacaanFragment bcnFr1 = new BacaanFragment();
+                    bcnFr1.setBacaanApa("fatihah");
+                    return bcnFr1;
                 case 2:
-                    return new BacaanFragment();
+                    BacaanFragment bcnFr2 = new BacaanFragment();
+                    bcnFr2.setBacaanApa("takbir");
+                    return bcnFr2;
+                case 3:
+                    BacaanFragment bcnFr3 = new BacaanFragment();
+                    bcnFr3.setBacaanApa("takbir1");
+                    return bcnFr3;
             }
             return null;
         }
@@ -75,6 +85,8 @@ public class BacaanTabFragment extends Fragment{
                     return "Al Fatihah";
                 case 2:
                     return "Warhamhahu";
+                case 3:
+                    return "Takbir1";
             }
             return "";
         }

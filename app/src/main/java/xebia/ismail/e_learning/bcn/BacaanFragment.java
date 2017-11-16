@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,11 @@ public class BacaanFragment extends Fragment {
 
     RecyclerView rvBacaan;
     MediaPlayer mPlayer;
+    String bacaanApa;
+
+    public void setBacaanApa(String bcnApa){
+        bacaanApa = bcnApa;
+    }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -37,6 +43,7 @@ public class BacaanFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_bcn, container, false);
         rvBacaan = (RecyclerView) v.findViewById(R.id.recyclerViewBacaan);
         mPlayer = MediaPlayer.create(getContext(), R.raw.awaitsu);
+        Toast.makeText(getContext(), bacaanApa, Toast.LENGTH_SHORT).show();
         return v;
     }
 
@@ -49,16 +56,27 @@ public class BacaanFragment extends Fragment {
         rvBacaan.setHasFixedSize(true);
 
         List<BacaanModel> bcn = new ArrayList<BacaanModel>();
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_1, R.raw.awaitsu));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_2, R.raw.cbk));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_3, R.raw.awaitsu));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_4, R.raw.cbk));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_5, R.raw.awaitsu));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_6, R.raw.cbk));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_7, R.raw.awaitsu));
-        bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris1_co, R.raw.cbk));
-        bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris2_co, R.raw.awaitsu));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir4_baris3_co, R.raw.cbk));
+        if(bacaanApa.equals("niat")){
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_1, R.raw.awaitsu));
+
+        }
+        else if(bacaanApa.equals("fatihah")){
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_3, R.raw.awaitsu));
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_4, R.raw.cbk));
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_5, R.raw.awaitsu));
+        }
+        else if(bacaanApa.equals("takbir")){
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_3, R.raw.awaitsu));
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_4, R.raw.cbk));
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_5, R.raw.awaitsu));
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_6, R.raw.cbk));
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_7, R.raw.awaitsu));
+            bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris1_co, R.raw.cbk));
+        }
+        else if(bacaanApa.equals("takbir1")){
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_3, R.raw.awaitsu));
+            bcn.add(new BacaanModel(1, false, R.drawable.takbir3_4, R.raw.cbk));
+        }
 
         final BacaanAdapter adapterBacaan = new BacaanAdapter(getContext());
         adapterBacaan.setListBacaan(bcn);
@@ -89,5 +107,17 @@ public class BacaanFragment extends Fragment {
     public void onPause() {
         super.onPause();
         if(mPlayer.isPlaying()){ mPlayer.stop(); }
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if(!isVisibleToUser){
+            try{
+                if(mPlayer.isPlaying()){ mPlayer.stop(); }
+            }catch (Exception n){
+                Log.e("MediaPlayer", "null");
+            }
+        }
     }
 }
