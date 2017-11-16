@@ -11,16 +11,18 @@ public class BacaanModel {
     int barisBacaan;
     boolean isSelected;
     int imgId;
+    int mp3Id;
 
     CountDownTimer cdt1, cdt2a, cdt2b;
     long milisecond;
 
 
 
-    public BacaanModel(int brsbcn, boolean isSelected, int imgId){
+    public BacaanModel(int brsbcn, boolean isSelected, int imgId, int mp3Id){
         barisBacaan = brsbcn;
         this.isSelected = isSelected;
         this.imgId = imgId;
+        this.mp3Id = mp3Id;
 
         if(brsbcn==1){
             cdt1 = new CountDownTimer(1000,1000) {

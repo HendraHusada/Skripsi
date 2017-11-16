@@ -1,5 +1,6 @@
 package xebia.ismail.e_learning.bcn;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -22,6 +23,7 @@ import xebia.ismail.e_learning.R;
 public class BacaanFragment extends Fragment {
 
     RecyclerView rvBacaan;
+    MediaPlayer mPlayer;
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class BacaanFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_bcn, container, false);
         rvBacaan = (RecyclerView) v.findViewById(R.id.recyclerViewBacaan);
+        mPlayer = MediaPlayer.create(getContext(), R.raw.awaitsu);
         return v;
     }
 
@@ -46,19 +49,16 @@ public class BacaanFragment extends Fragment {
         rvBacaan.setHasFixedSize(true);
 
         List<BacaanModel> bcn = new ArrayList<BacaanModel>();
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_1));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_2));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_3));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_4));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_5));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_6));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_7));
-        bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris1_co));
-        bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris2_co));
-        bcn.add(new BacaanModel(1, false, R.drawable.takbir4_baris3_co));
-
-
-
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_1, R.raw.awaitsu));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_2, R.raw.cbk));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_3, R.raw.awaitsu));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_4, R.raw.cbk));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_5, R.raw.awaitsu));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_6, R.raw.cbk));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir3_7, R.raw.awaitsu));
+        bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris1_co, R.raw.cbk));
+        bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris2_co, R.raw.awaitsu));
+        bcn.add(new BacaanModel(1, false, R.drawable.takbir4_baris3_co, R.raw.cbk));
 
         final BacaanAdapter adapterBacaan = new BacaanAdapter(getContext());
         adapterBacaan.setListBacaan(bcn);
@@ -75,6 +75,10 @@ public class BacaanFragment extends Fragment {
                     }
                 }
                 adapterBacaan.notifyDataSetChanged();
+
+                if(mPlayer.isPlaying()){ mPlayer.stop(); }
+                mPlayer = MediaPlayer.create(getContext(), adapterBacaan.getListBacaan().get(position).mp3Id);
+                mPlayer.start();
             }
         });
 
