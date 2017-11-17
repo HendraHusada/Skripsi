@@ -1,5 +1,6 @@
 package xebia.ismail.e_learning.front;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import xebia.ismail.e_learning.EvaluasiActivity;
 import xebia.ismail.e_learning.R;
 import xebia.ismail.e_learning.bcn.BacaanAdapter;
 import xebia.ismail.e_learning.bcn.BacaanModel;
@@ -48,7 +50,7 @@ public class FrontEvaluasiFragment extends Fragment {
         butIntro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getContext(), EvaluasiActivity.class));
             }
         });
     }

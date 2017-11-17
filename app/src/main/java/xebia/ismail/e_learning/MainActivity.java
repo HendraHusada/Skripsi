@@ -22,6 +22,7 @@ import android.widget.LinearLayout;
 
 import xebia.ismail.e_learning.fragment.HomeFragment;
 import xebia.ismail.e_learning.fragment.VolumeFragment;
+import xebia.ismail.e_learning.front.TabPosition;
 
 /* Ismail Xebia */
 
@@ -110,17 +111,30 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_1:
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_home);
+                TabPosition.selected = 0;
                 navFragment = new VolumeFragment();
                 break;
             case R.id.nav_2:
                 mPrevSelectedId = itemId;
-                setTitle(R.string.nav_reward);
-                navFragment = new HomeFragment();
+                setTitle(R.string.nav_home);
+                TabPosition.selected = 1;
+                navFragment = new VolumeFragment();
                 break;
-            //case R.id.nav_5:
-            //startActivity(new Intent(this, SettingsActivity.class));
-            //mNavigationView.getMenu().findItem(mPrevSelectedId).setChecked(true);
-            //return;
+            case R.id.nav_3:
+                mPrevSelectedId = itemId;
+                setTitle(R.string.nav_home);
+                TabPosition.selected = 2;
+                navFragment = new VolumeFragment();
+                break;
+            case R.id.nav_4:
+                mPrevSelectedId = itemId;
+                setTitle(R.string.nav_home);
+                TabPosition.selected = 3;
+                navFragment = new VolumeFragment();
+                break;
+            case R.id.nav_5:
+
+                break;
             case R.id.nav_6:
                 startActivity(new Intent(this, AboutActivity.class));
                 mNavigationView.getMenu().findItem(mPrevSelectedId).setChecked(true);

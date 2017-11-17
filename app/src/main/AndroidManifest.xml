@@ -18,6 +18,9 @@
         <activity android:name=".AboutActivity"/>
         <activity android:name=".BacaanActivity"/>
         <activity android:name=".MateriActivity"/>
+        <activity android:name=".EvaluasiActivity"/>
+        <activity android:name=".HasilEvaluasiActivity"/>
+        <activity android:name=".VideoActivity"/>
     </application>
 
 </manifest>

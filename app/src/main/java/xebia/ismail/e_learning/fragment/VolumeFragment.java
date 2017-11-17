@@ -16,6 +16,7 @@ import xebia.ismail.e_learning.bcn.SwitchBacaanFragment;
 import xebia.ismail.e_learning.front.FrontEvaluasiFragment;
 import xebia.ismail.e_learning.front.FrontMateriFragment;
 import xebia.ismail.e_learning.front.FrontVideoFragment;
+import xebia.ismail.e_learning.front.TabPosition;
 
 /**
  * Created by Admin on 3/15/2017.
@@ -32,8 +33,11 @@ public class VolumeFragment extends Fragment{
         mPager = (ViewPager) view.findViewById(R.id.pager);
         mTabLayout = (TabLayout) view.findViewById(R.id.tab_layout);
 
-        mPager.setAdapter(new TabsAdapter(getChildFragmentManager()));
+        TabsAdapter tabsAdapter = new TabsAdapter(getChildFragmentManager());
+
+        mPager.setAdapter(tabsAdapter);
         mTabLayout.setupWithViewPager(mPager);
+        mPager.setCurrentItem(TabPosition.selected);
 
         setHasOptionsMenu(true);
 
