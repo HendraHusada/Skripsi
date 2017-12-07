@@ -53,7 +53,11 @@
         <b>7.</b> Letak mayit sebelah kiblat orang yang menyalatinya, kecuali kalau shalat dilakukan diatas kubur atau shalat ghaib\n\n
     </string>
 
-    <string name="nav_home">Home</string>
+    <string name="posisi1"><b>1.</b> Posisi sholat jenazah untuk jenazah laki laki searah pada bagian kepala jenazah</string>
+    <string name="posisi2"><b>2.</b> Posisi sholat jenazah untuk jenazah perempuan searah pada bagian perut</string>
+    <string name="keutamaan1">Barangsiapa shalat jenazah dan tidak ikut mengiringi jenazahnya maka baginya pahala satu qiroth. Jika ia sampai mengikuti jenazahnya, maka baginya pahala dua qiroth. Ada yang bertanya, Apa yang dimaksud dua qiroth? Ukuran paling kecil dari dua qiroth adalah semisal gunung Uhud, jawab beliau shallallahu alaihi wa sallam. <b>(HR. Muslim no. 945)</b></string>
+    <string name="keutamaan2">Barangsiapa yang menyaksikan jenazah sampai ia menyolatkannya, maka baginya satu qiroth. Lalu barangsiapa yang menyaksikan jenazah hingga dimakamkan, maka baginya dua qiroth. Ada yang bertanya, Apa yang dimaksud dua qiroth? Rasulullah shallallahu alaihi wa sallam lantas menjawab, Dua qiroth itu semisal dua gunung yang besar. <b>(HR. Bukhari no. 1325 dan Muslim no. 945)</b></string>
 
+    <string name="nav_home">Home</string>
     <string name="aboutme">Android Developer</string>
 </resources>

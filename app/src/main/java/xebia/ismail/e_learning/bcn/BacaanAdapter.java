@@ -108,7 +108,7 @@ public class BacaanAdapter extends RecyclerView.Adapter<BacaanAdapter.BacaanView
             if(bacaan.get(position).isSelected){
                 holder.pb2a.setVisibility(View.VISIBLE);
                 holder.pb2b.setVisibility(View.VISIBLE);
-                bacaan.get(position).playProgressbar2(holder.pb2a,5000,holder.pb2b,2000);
+                bacaan.get(position).playProgressbar2(holder.pb2a,7500,holder.pb2b,7500);
             }
             else{
                 holder.pb2a.setVisibility(View.GONE);

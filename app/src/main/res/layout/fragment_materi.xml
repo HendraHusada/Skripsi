@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
@@ -9,25 +10,28 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/ic_description" />
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_materi" />
 
     <TextView
         android:id="@+id/txtMateri"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center_vertical"
         android:textSize="20dp"
         android:textAlignment="center"
-        android:text="Halaman ini berisi tentang materi mulai dari hukum shalat jenazah, rukun shalat jenazah dan syarat shalat jenazah"
+        android:text="Halaman ini berisi tentang materi shalat jenazah mulai dari hukum shalat jenazah, rukun shalat jenazah dan syarat shalat jenazah, untuk membaca materi silahkan klik tombol dibawah ini"
         />
 
     <Button
         android:id="@+id/butFrontMateri"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="80dp"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:text="Pelajari Materi!" />
+        android:textColor="@color/colorAccent"
+        android:text="Pelajari Materi" />
 </LinearLayout>

@@ -1,5 +1,6 @@
 package xebia.ismail.e_learning;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -39,7 +40,11 @@ public class VideoActivity extends AppCompatActivity {
 
         video = (VideoView) findViewById(R.id.videoViewShalatJenazah);
         //
-        MediaController controller = new MediaController(getApplicationContext());
+        MediaController controller = new MediaController(this);
+        video.setKeepScreenOn(true);
         video.setMediaController(controller);
+        String path = "android.resource://" + getPackageName() + "/" + R.raw.tatacara_shalat;
+        video.setVideoURI(Uri.parse(path));
+        video.start();
     }
 }

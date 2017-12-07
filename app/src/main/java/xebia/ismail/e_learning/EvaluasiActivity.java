@@ -46,17 +46,29 @@ public class EvaluasiActivity extends AppCompatActivity {
         nomorsoalyangtampil = nomorsoal;
 
         textViewSoal.setText(eva.getSoal(nomorsoal));
-        if (nomorsoal==0){imageViewSoal.setImageResource((R.drawable.hukum));}
-        else if (nomorsoal==1) {imageViewSoal.setImageResource((R.drawable.soal_takbir3cowok));}
-        else if (nomorsoal==2) {imageViewSoal.setImageResource((R.drawable.ic_rukun));}
-        else if (nomorsoal==3) {imageViewSoal.setImageResource((R.drawable.ic_about));}
-        else {imageViewSoal.setImageResource(R.drawable.ic_evaluasi);}
+        if (nomorsoal==0){imageViewSoal.setImageResource((R.drawable.gra_white));}
+        else if (nomorsoal==1) {imageViewSoal.setImageResource((R.drawable.soal_no2));}
+        else if (nomorsoal==2) {imageViewSoal.setImageResource((R.drawable.soal_no3));}
+        else if (nomorsoal==3) {imageViewSoal.setImageResource((R.drawable.gra_white));}
+        else {imageViewSoal.setImageResource(R.drawable.gra_white);}
 
         if (nomorsoal==1) {
-            buttonA.setBackgroundResource(R.drawable.ic_about);
-            buttonB.setBackgroundResource(R.drawable.jawaban_2b);
-            buttonC.setBackgroundResource(R.drawable.ic_help);
-            buttonD.setBackgroundResource(R.drawable.ic_menu_camera);
+            buttonA.setBackgroundResource(R.drawable.jwb_soal2_a);
+            buttonB.setBackgroundResource(R.drawable.jwb_soal2_b);
+            buttonC.setBackgroundResource(R.drawable.jwb_soal2_c);
+            buttonD.setBackgroundResource(R.drawable.jwb_soal2_d);
+
+            buttonA.setText("");
+            buttonB.setText("");
+            buttonC.setText("");
+            buttonD.setText("");
+        }
+
+        else if (nomorsoal==2) {
+            buttonA.setBackgroundResource(R.drawable.jwb_soal2_a);
+            buttonB.setBackgroundResource(R.drawable.jwb_soal2_b);
+            buttonC.setBackgroundResource(R.drawable.jwb_soal2_c);
+            buttonD.setBackgroundResource(R.drawable.jwb_soal2_d);
 
             buttonA.setText("");
             buttonB.setText("");

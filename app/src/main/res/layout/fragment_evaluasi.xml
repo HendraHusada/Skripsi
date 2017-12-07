@@ -8,26 +8,29 @@
         android:id="@+id/imageView3"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/ic_evaluasi" />
+        app:srcCompat="@drawable/icon_evaluasi" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center_vertical"
         android:textSize="20dp"
         android:textAlignment="center"
-        android:text="Halaman ini berisi tentang soal soal mengenai materi dari shalat jenazah"
+        android:text="Halaman ini berisi tentang soal soal mengenai materi dari shalat jenazah, apakah anda siap untuk menjawab soal ? silahkan klik tombol dibawah"
         />
 
     <Button
         android:id="@+id/butFrontEvaluasi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
+        android:textColor="@color/colorAccent"
         android:textStyle="bold"
-        android:text="Mulai Kuis!" />
+        android:text="Mulai Kuis" />
 </LinearLayout>

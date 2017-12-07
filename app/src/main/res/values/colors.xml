@@ -5,4 +5,16 @@
     <color name="colorAccent">#40a5ff</color>
     <color name="menu_background">#119c4b</color>
     <color name="background">#ececec</color>
+    <color name="black">#151616</color>
+    <color name="green">#00ff87</color>
+    <color name="yellow">#f9f911</color>
+    <color name="blue">#4911ff</color>
+    <color name="darkblue">#0867ad</color>
+    <color name="seablue">#11fff7</color>
+    <color name="red">#ff4811</color>
+    <color name="orange">#ffd711</color>
+    <color name="blue2">#00caf7</color>
+    <color name="whitegrey">#fffddd</color>
+    <color name="agakblack">#3d3c38</color>
+
 </resources>

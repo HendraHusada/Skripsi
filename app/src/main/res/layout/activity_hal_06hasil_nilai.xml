@@ -1,19 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_hal_06hasil_nilai"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/greenline_quran"
     tools:context=".HasilEvaluasiActivity">
 
+
     <TextView
+        android:text="NILAI ANDA :"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+
+        <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/back_skor"
+            android:id="@+id/imageView6" />
+
+        <TextView
+        android:layout_marginTop="140dp"
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:id="@+id/textviewjumlahbenar"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/textviewjumlahbenar" android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textSize="30pt"
+        android:textColor="@color/orange"
+        android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_alignParentTop="true"
+        android:layout_marginTop="280dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/reward_evaluasi"
+            android:id="@+id/imageView5" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textviewReward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textColor="@color/blue"
+        android:textSize="10pt"
+        android:textStyle="italic"
+        android:layout_below="@+id/imageView5" />
+
+    <!--<android.support.v7.widget.CardView-->
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="450dp"
+        app:cardBackgroundColor="@color/agakblack"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp">
+<!---->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/seablue"
+        android:background="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:text="Ulangi"
+        android:layout_below="@+id/textviewReward"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6" />
+    <!--</android.support.v7.widget.CardView>-->
 </RelativeLayout>

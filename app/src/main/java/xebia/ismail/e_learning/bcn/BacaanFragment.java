@@ -79,13 +79,13 @@ public class BacaanFragment extends Fragment {
                 bcn.add(new BacaanModel(1, false, R.drawable.sholawat_5, R.raw.sholawat_5, "Artinya : 'Sesungguhnya Engkau Maha Terpuji dan Maha Agung'", "Fil 'aalamiina innaka hamiidum majiid"));
             }
             else if(bacaanApa.equals("takbir3")){
-                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_1, R.raw.takbir3_co1, "Artinya : 'Ya Allah ampunilah dia, rahmatilah dia, maafkanlah dia'","Allaahummaghfirlahu warhamhu wa 'aafihi wa'fu 'anhu"));
-                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_2, R.raw.takbir3_co2, "Artinya : 'maafkanlah dia, ampunilah kesalahannya'","wa akrim nuzuulahu, wa wassi' madkhalahu"));
-                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_3, R.raw.takbir3_co3, "Artinya : 'lapangkanlah kuburannya, cucilah kesalahannya dengan air'","waghsilhu bimaa-in watsaljin wabaradin"));
-                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_4, R.raw.takbir3_co4, "Artinya : 'dan embun sebagaimana mencuci pakaian putih dari kotoran'","wanaqqihi minal khathaayaa kamaa yunaqqats tsaubul abyadhu minaddanasi"));
-                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_5, R.raw.takbir3_co5, "Artinya : 'gantilah rumahnya dengan rumah yang lebih baik'","wa abdilhu daaran khairan min daarihi"));
-                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_6, R.raw.takbir3_co6, "Artinya : 'gantilah keluarganya dengan keluarga yang lebih baik, gantilah istrinya dengan isri yang lebih baik'","wa ahlan khairan min ahlihi, wa zaujan khairan min zaujihi"));
-                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_7, R.raw.takbir3_co7, "Artinya : 'hindarkanlah dari fitnah kubur dan siksa neraka'","waqihi fitnatal qabri wa 'adzaabannaar"));
+                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris1, R.raw.takbir3_co1, "Artinya : 'Ya Allah ampunilah dia, rahmatilah dia, maafkanlah dia'","Allaahummaghfirlahu warhamhu wa 'aafihi wa'fu 'anhu"));
+                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris2, R.raw.takbir3_co2, "Artinya : 'maafkanlah dia, ampunilah kesalahannya'","wa akrim nuzuulahu, wa wassi' madkhalahu"));
+                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris3, R.raw.takbir3_co3, "Artinya : 'lapangkanlah kuburannya, cucilah kesalahannya dengan air'","waghsilhu bimaa-in watsaljin wabaradin"));
+                bcn.add(new BacaanModel(2, false, R.drawable.takbir3_baris4, R.raw.takbir3_co4, "Artinya : 'dan embun sebagaimana mencuci pakaian putih dari kotoran'","wanaqqihi minal khathaayaa kamaa yunaqqats tsaubul abyadhu minaddanasi"));
+                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris5, R.raw.takbir3_co5, "Artinya : 'gantilah rumahnya dengan rumah yang lebih baik'","wa abdilhu daaran khairan min daarihi"));
+                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris6, R.raw.takbir3_co6, "Artinya : 'gantilah keluarganya dengan keluarga yang lebih baik, gantilah istrinya dengan isri yang lebih baik'","wa ahlan khairan min ahlihi, wa zaujan khairan min zaujihi"));
+                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris7, R.raw.takbir3_co7, "Artinya : 'hindarkanlah dari fitnah kubur dan siksa neraka'","waqihi fitnatal qabri wa 'adzaabannaar"));
             }
             else if(bacaanApa.equals("takbir4")){
                 bcn.add(new BacaanModel(2, false, R.drawable.takbir4_baris1_co, R.raw.takbir4_co1, "Artinya : 'Ya Allah, janganlah kiranya pahalanya tidak sampai kepada kami, dan janganlah Engkau memberi kami fitnah sepeninggalnya, dan ampunilah kami dan dia'", "Allahumma laa tahrimnaa ajrahu walaa taftinna ba’dahu waghfir lanaa walahu"));
@@ -124,7 +124,7 @@ public class BacaanFragment extends Fragment {
                 bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris2_ce, R.raw.takbir3_ce2, "Artinya : 'maafkanlah dia, ampunilah kesalahannya'","wa akrim nuzuulaha, wa wassi' madkhalaha"));
                 bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris3_ce, R.raw.takbir3_ce3, "Artinya : 'lapangkanlah kuburannya, cucilah kesalahannya dengan air'","waghsilha bimaa-in watsaljin wabaradin"));
                 bcn.add(new BacaanModel(2, false, R.drawable.takbir3_baris4_ce, R.raw.takbir3_ce4, "Artinya : 'dan embun sebagaimana mencuci pakaian putih dari kotoran'","wanaqqihi minal khathaayaa kamaa yunaqqats tsaubul abyadhu minaddanasi"));
-                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris5_ce, R.raw.takbir3_ce5, "Artinya : 'gantilah rumahnya dengan rumah yang lebih baik'","wa abdilha daaran khairan min daariha"));
+                bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris5_ce, R.raw.takbir3_ce5new, "Artinya : 'gantilah rumahnya dengan rumah yang lebih baik'","wa abdilha daaran khairan min daariha"));
                 bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris6_ce, R.raw.takbir3_ce6, "Artinya : 'gantilah keluarganya dengan keluarga yang lebih baik, gantilah suaminya dengan suami yang lebih baik'","wa ahlan khairan min ahliha, wa zaujan khairan min zaujiha"));
                 bcn.add(new BacaanModel(1, false, R.drawable.takbir3_baris7_ce, R.raw.takbir3_ce7, "Artinya : 'hindarkanlah dari fitnah kubur dan siksa neraka'","waqiha fitnatal qabri wa 'adzaabannaar"));
             }

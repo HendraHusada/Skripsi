@@ -2,40 +2,50 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/ic_shalat" />
+        android:src="@drawable/icon_bacaan" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center_vertical"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textAlignment="center"
-        android:text="Halaman ini berisi tentang bacaan shalat jenazah disertai audio, latin dan arti dari bacaan shalat untuk mayit laki-laki dan mayit perempuan"
+        android:text="Halaman ini berisi tentang bacaan shalat jenazah yang disertai audio, bacaan latin dan arti dari bacaan shalat jenazah untuk mayit laki-laki dan mayit perempuan silahkan memilih bacaan yang akan dibaca pada tombol dibawah"
         />
 
     <Button
         android:layout_marginTop="10dp"
         android:id="@+id/butCewek"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
         android:text="Bacaan Shalat Jenazah Perempuan"/>
 
     <Button
         android:textColorHint="@color/colorPrimary"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="30dp"
         android:id="@+id/butCowok"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
         android:text="Bacaan Shalat Jenazah Laki-Laki"/>
 </LinearLayout>
 

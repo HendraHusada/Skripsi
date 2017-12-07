@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="6dp"
-                app:cardBackgroundColor="#ffffff"
+                app:cardBackgroundColor="@android:color/transparent"
                 app:cardCornerRadius="0dp"
                 app:cardElevation="4dp">
 
@@ -32,19 +32,22 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/hukum" />
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_hukum" />
 
                     <com.pixplicity.fontview.FontAppCompatTextView
                         style="@style/FontTextViewStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="32dp"
                         android:layout_marginTop="32dp"
                         android:layout_marginBottom="16dp"
                         android:text="Hukum Shalat Jenazah"
-                        android:textSize="18dp"
+                        android:textColor="@color/blue"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="20dp"
                         android:textStyle="bold" />
 
                     <com.pixplicity.fontview.FontAppCompatTextView
@@ -54,10 +57,46 @@
                         android:layout_marginLeft="32dp"
                         android:layout_marginBottom="16dp"
                         android:layout_marginRight="32dp"
-                        android:textColor="#565656"
+                        android:textColor="@color/black"
+                        android:textAlignment="inherit"
                         android:text="@string/hukum"
-                        android:textSize="15dp"/>
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="18dp"/>
 
+                    <com.pixplicity.fontview.FontAppCompatTextView
+                        style="@style/FontTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@color/blue"
+                        android:text="Keutamaan Sholat Jenazah"
+                        android:textStyle="bold"
+                        android:textSize="20dp"/>
+
+                    <com.pixplicity.fontview.FontAppCompatTextView
+                        style="@style/FontTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@color/agakblack"
+                        android:text="@string/keutamaan1"
+                        android:textSize="18dp"/>
+
+                    <com.pixplicity.fontview.FontAppCompatTextView
+                        style="@style/FontTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@color/agakblack"
+                        android:text="@string/keutamaan2"
+                        android:textSize="18dp"/>
 
                 </LinearLayout>
 
@@ -65,7 +104,5 @@
 
         </LinearLayout>
 
-    </android.support.v4.widget.NestedScrollView
-        >
-
+    </android.support.v4.widget.NestedScrollView>
 </RelativeLayout>

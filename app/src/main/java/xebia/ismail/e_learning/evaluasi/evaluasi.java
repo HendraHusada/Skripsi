@@ -25,11 +25,11 @@ public class evaluasi {
     }
 
     public void setSoal(){
-        soal[0] = "Apa hukum shalat jenazah ?";
-        soal[1] = "Lengkapilah bacaan dibawah ini!";
-        soal[2] = "Bacaan apa yang dibaca pada saat takbir kedua shalat jenazah?";
-        soal[3] = "Apa yang dimaksud fardhu kifayah?";
-        soal[4] = "What?";
+        soal[0] = "1. Apa hukum shalat jenazah ?";
+        soal[1] = "2. Lengkapilah bacaan dibawah ini dengan potongan ayat yang benar!";
+        soal[2] = "3. Manakah potongan ayat yang benar untuk bacaan dibawah ini ?";
+        soal[3] = "4. Posisi ketika mensholatkan jenazah perempuan adalah pada bagian ?";
+        soal[4] = "5. Dibawah ini merupakan syarat sah sholat jenazah, kecuali ?";
     }
     public void setJawaban(){
         jawaban[0] = "a";
@@ -41,7 +41,7 @@ public class evaluasi {
 
     public void setPilihanJawaban(){
         pilihanJawaban[0][0] = "Fardhu Kifayah";
-        pilihanJawaban[0][1] = "sunnah";
+        pilihanJawaban[0][1] = "Sunnah";
         pilihanJawaban[0][2] = "Haram";
         pilihanJawaban[0][3] = "Wajib";
 
@@ -55,15 +55,15 @@ public class evaluasi {
         pilihanJawaban[2][2] = "3.3";
         pilihanJawaban[2][3] = "3.4";
 
-        pilihanJawaban[3][0] = "4.1";
-        pilihanJawaban[3][1] = "4.2";
-        pilihanJawaban[3][2] = "4.3";
-        pilihanJawaban[3][3] = "4.4";
+        pilihanJawaban[3][0] = "Searah Kepala";
+        pilihanJawaban[3][1] = "Searah Bahu";
+        pilihanJawaban[3][2] = "Antara Kepala dan bahu";
+        pilihanJawaban[3][3] = "Searah Perut";
 
-        pilihanJawaban[4][0] = "5.1";
-        pilihanJawaban[4][1] = "5.2";
-        pilihanJawaban[4][2] = "5.3";
-        pilihanJawaban[4][3] = "5.4";
+        pilihanJawaban[4][0] = "Berdiri bagi yang mampu";
+        pilihanJawaban[4][1] = "Baligh dan berakal";
+        pilihanJawaban[4][2] = "Menutup aurat";
+        pilihanJawaban[4][3] = "Beragama Islam";
     }
 
     public void setJumlahBenar(int jmlbnr){

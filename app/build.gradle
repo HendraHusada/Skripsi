@@ -35,4 +35,5 @@ dependencies {
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
     compile 'com.pixplicity.letterpress:library:1.0'
     compile 'id.zelory.benih:benih:0.2.0'
+    compile 'com.github.apl-devs:appintro:v4.2.2'
 }

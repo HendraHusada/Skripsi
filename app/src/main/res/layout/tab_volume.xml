@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/greenline_quran">
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_layout"
@@ -12,11 +13,11 @@
         android:layout_marginTop="?attr/actionBarSize"
         android:background="@drawable/gra_white"
         android:minHeight="?attr/actionBarSize"
-        app:tabIndicatorColor="#303030"
+        app:tabIndicatorColor="@color/blue2"
         app:tabMode="scrollable"
         app:tabContentStart="66dp"
-        app:tabTextColor="#b3b3b3"
-        app:tabSelectedTextColor="#101010"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="@color/blue2"
         app:tabTextAppearance="@style/TextAppearance.Design.Tab"/>
 
     <android.support.v4.view.ViewPager

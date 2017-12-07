@@ -133,8 +133,9 @@ public class MainActivity extends AppCompatActivity
                 navFragment = new VolumeFragment();
                 break;
             case R.id.nav_5:
-
-                break;
+                startActivity(new Intent(this, HelpActivity.class));
+                mNavigationView.getMenu().findItem(mPrevSelectedId).setChecked(true);
+                return;
             case R.id.nav_6:
                 startActivity(new Intent(this, AboutActivity.class));
                 mNavigationView.getMenu().findItem(mPrevSelectedId).setChecked(true);
