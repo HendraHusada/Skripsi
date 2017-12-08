@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_hukum"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Hukum" />
+        <item
+            android:id="@+id/nav_syarat"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Syarat" />
+        <item
+            android:id="@+id/nav_rukun"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Rukun" />
+        <item
+            android:id="@+id/nav_shalat"
+            android:icon="@drawable/ic_shalat"
+            android:title="Shalat Jenazah" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_video"
+            android:title="Video" />
+        <item
+            android:id="@+id/nav_evaluasi"
+            android:icon="@drawable/ic_evaluasi"
+            android:title="Evaluasi" />
+
+    </group>
+
+    <item android:title="Help and About">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="About" />
+
+        </menu>
+    </item>
+
+</menu>
