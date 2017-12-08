@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import xebia.ismail.e_learning.FlipCurl.PageActivity;
 import xebia.ismail.e_learning.MateriActivity;
 import xebia.ismail.e_learning.R;
 
@@ -41,7 +42,9 @@ public class FrontMateriFragment extends Fragment {
         butIntro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), MateriActivity.class));
+                Intent intent = new Intent(getContext(), PageActivity.class);
+                intent.putExtra("page",1);
+                startActivity(intent);
             }
         });
     }
